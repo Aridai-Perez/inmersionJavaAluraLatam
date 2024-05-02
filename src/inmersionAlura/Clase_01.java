@@ -1,6 +1,4 @@
 package inmersionAlura;
-
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Clase_01 {
@@ -33,18 +31,28 @@ public class Clase_01 {
 			System.out.println("Pelicula actual");
 		}
 		
-		double mediaEvaluacionUsuario = 0;
+		double mediaEvaluacionMatrix = 0;
 		
 		Scanner entrada = new Scanner(System.in);
 		for(int i =0; i <3; i++) {
 			System.out.println("Ingresa tu evaluacion para Matrix: ");
 			double notaMatrix = entrada.nextDouble();
-			mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
+			mediaEvaluacionMatrix = mediaEvaluacionMatrix + notaMatrix;
+		}
 		
+		System.out.println("La media de la pelicula Matrix calculada por el usuario es: " + (mediaEvaluacionMatrix / 3));
+		
+		double mediaEvaluacionHPotter = 0;
+		int count = 0;
+		while (count < 3 ) {
+			count++;
+			System.out.println("Ingresa tu calificacion para la pelicula Harry potter 1: ");
+			double notaHarryPotter = entrada.nextDouble();
+			mediaEvaluacionHPotter = mediaEvaluacionHPotter + notaHarryPotter;
 		}
 		
 		entrada.close();
-		System.out.println("La media de la pelicula\nMatrix calculada por el usuario es: " + (mediaEvaluacionUsuario / 3));
+		System.out.println("La media de la pelicula Harry Potter 1 calculada por el usuario es: " + (mediaEvaluacionHPotter / 3));
 
 	}
 }

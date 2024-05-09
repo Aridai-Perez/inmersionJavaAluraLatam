@@ -22,7 +22,6 @@ public class Series {
 					1) Agregar nueva Serie
 					2) Ver la lista de series
 					3) Volver a menu principal
-					4) Salir
 					""";
 			System.out.println(menu);
 			opcion = teclado.nextInt();
@@ -38,9 +37,6 @@ public class Series {
 			case 3: 
 				Menu_Opciones displayMenu = new Menu_Opciones();
 				displayMenu.mostrarMenu();
-			case 4:
-				System.out.println("Gracias por usar Screenmatch, hasta luego!");
-				break;
 			default:
 				System.out.println("Opcion no valida");
 				break;

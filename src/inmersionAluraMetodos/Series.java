@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import inmersionAlura.Menu_Opciones;
-import inmersionAluraModelos.Pelicula;
 import inmersionAluraModelos.Serie;
 
 public class Series {
@@ -84,7 +83,7 @@ public class Series {
 		int duracionCapitulos = teclado.nextInt();
 		teclado.nextLine();
 		System.out.println("Por ultimo agrega una evaluacion del 1-5 para la pelicula: ");
-		int evaluacion = teclado.nextInt();
+		double evaluacion = teclado.nextDouble();
 		teclado.nextLine();
 		
 		Serie serieUsuario = new Serie();

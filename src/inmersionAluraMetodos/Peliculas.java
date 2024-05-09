@@ -77,7 +77,7 @@ public class Peliculas {
 		System.out.println("Ingresa el director de la pelicual (si no lo conoces oprime enter): ");
 		String director = teclado.nextLine();
 		System.out.println("Por ultimo agrega una evaluacion del 1-5 para la pelicula: ");
-		int evaluacion = teclado.nextInt();
+		double evaluacion = teclado.nextDouble();
 		teclado.nextLine();
 		
 		Pelicula peliUsuario = new Pelicula();
